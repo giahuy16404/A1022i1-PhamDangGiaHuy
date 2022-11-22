@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5 Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra</title>
+</head>
+<body>
+
+</body>
+<script>
+    let giưaKy = +prompt(" Nhập vào điểm giữa kỳ : ");
+    let cuoiKy = +prompt(" Nhập vào điểm cuối kỳ");
+    let TBCM = ((giưaKy * 2 )+(cuoiKy*3))/5
+    if (TBCM <3.5){
+        document.write("Học sinh có số điểm trung bình là : "+TBCM);
+        document.write("Xếp loại: Kém");
+    }else if (TBCM<=4.9){
+        document.write("Học sinh có số điểm trung bình là : "+TBCM);
+        document.write("Xếp loại: Yếu");
+    }else if (TBCM<=6.4){
+        document.write("Học sinh có số điểm trung bình là : "+TBCM);
+        document.write("Xếp loại: Trung bình");
+    }else if (TBCM<=7.9){
+        document.write("Học sinh có số điểm trung bình là : "+TBCM);
+        document.write("Xếp loại: Khá");
+    }else {
+        document.write("Học sinh có số điểm trung bình là : "+TBCM);
+        document.write("Xếp loại: Giỏi");
+    }
+</script>
+</html>
