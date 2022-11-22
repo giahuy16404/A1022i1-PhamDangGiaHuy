@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10 Viết chương trình tính giá điện.</title>
+</head>
+<body>
+
+</body>
+<script>
+    let kWH = +prompt("Nhập số KWH : ");
+    if (kWH>0&&kWH<=50) {
+        document.write("Số tiền điện là : "+ (kWH *1.672) +" Đồng")
+    }else if ( kWH>0&&kWH<=100) {
+        document.write("Số tiền điện là : "+ (kWH *1.734) +" Đồng")
+    }else if ( kWH>0&&kWH<=200) {
+        document.write("Số tiền điện là : "+ (kWH *2.014) +" Đồng")
+    }else if ( kWH>0&&kWH<=300) {
+        document.write("Số tiền điện là : "+ (kWH *2.536) +" Đồng")
+    }else if ( kWH>0&&kWH<=400) {
+        document.write("Số tiền điện là : "+ (kWH *2.834) +" Đồng")
+    }else if ( kWH>0&&kWH>401){
+        document.write("Số tiền điện là : "+ (kWH * 2.927) +" Đồng")
+    }else {
+        document.write("Mời bạn nhập lại!")
+    }
+
+</script>
+</html>

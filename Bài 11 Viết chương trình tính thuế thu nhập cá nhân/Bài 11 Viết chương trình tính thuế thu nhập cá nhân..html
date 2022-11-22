@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 11 Viết chương trình tính thuế thu nhập cá nhân.</title>
+</head>
+<body>
+
+</body>
+<script>
+    let thuNhap = +prompt("Nhập số thu nhập cá nhân trong 1 tháng : ");
+    if (thuNhap<5000000){
+        document.write("Số thuế bạn cần phải nộp là :"+ ((thuNhap/100)*5));
+    }else  if (thuNhap<10000000){
+        document.write("Số thuế bạn cần phải nộp là :"+ ((thuNhap/100)*10)+250000);
+    }else if (thuNhap<18000000){
+        document.write("Số thuế bạn cần phải nộp là :"+ ((thuNhap/100)*15)+750000);
+    }else if (thuNhap<32000000){
+        document.write("Số thuế bạn cần phải nộp là :"+ ((thuNhap/100)*20)+1950000);
+    }else if (thuNhap<52000000){
+        document.write("Số thuế bạn cần phải nộp là :"+ ((thuNhap/100)*25)+4750000);
+    }else if (thuNhap<80000000){
+        document.write("Số thuế bạn cần phải nộp là :"+ ((thuNhap/100)*30)+9750000);
+    }else if (thuNhap>80000000){
+        document.write("Số thuế bạn cần phải nộp là :"+ ((thuNhap/100)*35)+18150000);
+    };
+</script>
+</html>

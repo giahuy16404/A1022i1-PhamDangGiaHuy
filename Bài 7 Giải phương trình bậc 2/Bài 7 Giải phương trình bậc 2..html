@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7 Giải phương trình bậc 2.</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = +prompt("Nhập vào số a : ");
+    let b = +prompt("Nhập vào số b : ");
+    let c = +prompt("Nhập vào số c : ");
+    if (a>0){
+        let delta = Math.pow(b,2)- (4 *a*c);
+        if (delta<0 ){
+            document.write("Phương trình vô nghiệm :");
+        }else if (delta==0){
+            document.write("Phương trình có nghiệm kép là : "+ (-b/(2*a)));
+        }else if (delta>0){
+            document.write("Phương trình có 2 nghiệm phân biêt là: <br> X1 = "+(-b +Math.sqrt(delta))/2*a + "<br> X2 = "+(-b +Math.sqrt(delta))/2*a);
+        }
+    }else {
+        document.write("Mời bạn nhập lại!")
+
+    }
+
+
+</script>
+</html>
