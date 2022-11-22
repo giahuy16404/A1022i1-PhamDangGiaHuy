@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6 Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</title>
+</head>
+<body>
+
+</body>
+<script>
+    let doanhSo = +prompt("Nhập doanh số bán hàng :");
+    let hoaHong;
+    if (doanhSo>=1000000){
+        hoaHong = (doanhSo/100)*20;
+        document.write("Hoa hồng bạn nhận được là 20% <br>Số tiền bạn nhận được là "+hoaHong)
+    }else if (doanhSo>=100000){
+        hoaHong = (doanhSo/100)*5;
+        document.write("Hoa hồng bạn nhận được là 5% <br>Số tiền bạn nhận được là "+hoaHong)
+    }else {
+        hoaHong = (doanhSo/100)*3;
+        document.write("Hoa hồng bạn nhận được là 3% <br>Số tiền bạn nhận được là "+ hoaHong);
+
+    }
+
+
+</script>
+</html>
