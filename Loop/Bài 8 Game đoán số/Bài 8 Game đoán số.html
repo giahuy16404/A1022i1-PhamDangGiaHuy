@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8 Game đoán số</title>
+</head>
+<body>
+<button type="button" onclick="input()"> Chơi </button>
+</body>
+<script>
+    let dauVao1;
+    let dauVao2;
+    let use;
+    let check;
+
+    function input() {
+        dauVao1 = +prompt("Nhập vào số muốn đoán trong khoản bắt đầu là :");
+        dauVao2 = +prompt("Nhập vào số muốn đoán trong khoản kết thúc  là :");
+        use = +prompt("Số bạn muốn đoán là ");
+        check = +Math.floor(Math.random()* dauVao2) + dauVao1;
+
+        for (let i=1;i<=3 ;i++ ) {
+          if (use>check){
+                alert("Bạn đã dự đoán lớn hơn bạn đã thua, xin mời nhập lại");
+            }else if (use<check){
+              alert("Bạn đã dự đoán bé hơn bạn đã thua, xin mời nhập lại");
+            } else {
+              alert(" Chúc mừng bạn đã thắng! ");
+              break;
+        }
+            use = +prompt("Số bạn muốn đoán là ");
+        }
+    }
+
+
+</script>
+</html>
