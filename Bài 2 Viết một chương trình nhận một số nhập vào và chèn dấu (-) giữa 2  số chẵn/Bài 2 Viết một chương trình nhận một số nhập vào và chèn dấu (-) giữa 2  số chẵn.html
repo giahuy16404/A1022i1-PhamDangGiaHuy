@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2 Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2  số chẵn</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = prompt("Nhập vào số bất kỳ :");
+    let traVe = [a[0]];
+
+    for (let x = 1; x < a.length; x++) {
+        if (a[x - 1] % 2 === 0 && a[x] % 2 === 0) {
+            traVe.push('-', a[x]);
+        } else {
+            traVe.push(a[x]);
+        }
+    }
+    document.write(traVe.join(''));
+</script>
+</html>
