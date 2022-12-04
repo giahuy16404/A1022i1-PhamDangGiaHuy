@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3- Viết chương trình khởi tạo mảng số nguyên.</title>
+</head>
+<body>
+
+</body>
+<script>
+    let numbers=[1,11,1,11,12,13,124,12,2,1];
+    let max = numbers[0];
+    let sum=0;
+
+    for (let i = 0; i <numbers.length ; i++) {
+        sum+=numbers[i]
+        if (numbers[i] > max){
+            max = numbers[i]
+        }
+    }
+    document.write("Số lớn nhất là : "+max+"  Số trung binh là : "+(sum/10))
+</script>
+</html>

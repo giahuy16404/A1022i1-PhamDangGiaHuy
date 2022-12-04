@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7- Viết chương trình khởi tạonhập vào một mảng số nguyên gồm 10 phần tử, </title>
+</head>
+<body>
+
+</body>
+<script>
+    let numbers = []
+    let viTri;
+    for (let i = 0; i <10 ; i++) {
+        numbers[i]= +prompt("nhập vào mãng vị trí "+i)
+    }
+    let v = +prompt("Nhập số V : ");
+    if (numbers.includes(v)){
+        viTri=numbers.includes(v);
+        numbers.splice(viTri,1);
+        numbers.push(0);
+
+        document.write( v+"V is in the array<br>")}
+    else {
+        document.write(v+ "V is not in the array")
+    }
+</script>
+</html>
