@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5: Tạo một mảng với bảy phần tử dạng chuỗi </title>
+</head>
+<body>
+
+</body>
+<script>
+    let starS =  ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let constellS =["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+
+    function starSystem(arrStar) {
+        for (let i = 0; i < starS.length; i++) {
+            if (arrStar === starS[i]) {
+                return constellS[i]
+            }
+        }
+    }
+    let inputStar = prompt("Nhập vào ngồi sao : ");
+    if (starSystem(inputStar)){
+        document.write(starSystem(inputStar))
+    }else {
+        document.write("không có")
+    }
+
+
+</script>
+</html>
