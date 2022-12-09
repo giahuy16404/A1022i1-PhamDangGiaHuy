@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm nhận vào 3 số nguyên bất kỳ</title>
+</head>
+<body>
+
+</body>
+<script>
+    let inputnumbers = [];
+    for (let i = 0; i <3 ; i++) {
+        inputnumbers[i]= +prompt("Nhập vào 3 số");
+    }
+    let min = inputnumbers[0];
+    function arrNumber(minNumber) {
+        for (let i = 1; i <inputnumbers.length ; i++) {
+            if (min>inputnumbers[i]){
+                min = inputnumbers[i]
+            }
+        }return  document.write(min+"Là số nhỏ nhất");
+
+    }arrNumber(inputnumbers)
+</script>
+</html>
