@@ -8,12 +8,13 @@
 
 </body>
 <script>
-    let inputDuongKinh = +prompt("Nhập đường kính hình tròn");
+    let inputbankinh = +prompt("Nhập bán kính hình tròn");
+
     function hinhTron(a) {
-        if (a===inputDuongKinh){
-             document.write("Chu vi hình tròn là "+inputDuongKinh*(3.14)+"<br>");
-             document.write("Diện tích hình tròn là "+((inputDuongKinh/2)*(inputDuongKinh/2))*(3.14));
+        if (inputbankinh){
+             document.write("Chu vi hình tròn là "+(inputbankinh*2)*(3.14)+"<br>");
+             document.write("Diện tích hình tròn là "+(inputbankinh*inputbankinh)*(3.14));
         }
-    }hinhTron(inputDuongKinh);
+    }hinhTron(inputbankinh);
 </script>
 </html>
