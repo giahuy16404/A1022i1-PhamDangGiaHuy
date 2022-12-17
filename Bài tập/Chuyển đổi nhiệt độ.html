@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xay dung lop mo ta hinh chu nhat</title>
+</head>
+<body>
+</body>
+<script>
+    class Temperature{
+        constructor(doC) {
+            this.doC = doC;
+        }
+        getdoF(){
+            return (this.doC*1.8)+32;
+        }
+        getdoKenvin(){
+            return (this.doC+273.15);
+        }
+
+    }
+    let inputTemperature = +prompt("Nhập nhiệt độ");
+
+    let temperature = new Temperature(inputTemperature)
+    document.write("Dộ c sang F là " +temperature.getdoF()+"<br>")
+    document.write("Dộ c sang độ Kenvin  là " +temperature.getdoKenvin())
+
+</script>
+</html>
