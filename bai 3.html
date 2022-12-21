@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = [];
+    let sum = 0;
+    a.length = +prompt("Nhập vào độ dài mảng a");
+    for (let i = 0; i <a.length ; i++) {
+        a[i] = +prompt("Nhập vào các số nguyên");
+    }
+    let b = [];
+    for (let i = 0; i <a.length  ; i++) {
+        sum += a[i];
+        b[i] = sum;
+    }
+    document.write(a+"<br>")
+    document.write(b)
+
+
+
+
+</script>
+
+</html>
