@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 05</title>
+</head>
+<body>
+
+</body>
+<script>
+    function maxFraction(a,b) {
+        let index1;
+        let index2;
+        let viTri;
+        for (let i = 0; i <a.length ; i++) {
+           index1 =  a[i];
+           index2=  b[i];
+           viTri = [i];
+        }
+        return document.write(index1+"/"+ index2 + "vị trí :"+viTri) ;
+
+    }let stop = +prompt("Nhậpva vào chiều dài của mảng");
+    let numerators = [];
+    let denominators = [];
+    for (let i = 0; i <stop ; i++) {
+        numerators[i]  = +prompt("Nhập vào mảng 1");
+    }
+    for (let i = 0; i <stop ; i++) {
+        denominators[i]= +prompt("Nhập vào mảng 2")
+    }
+    maxFraction(numerators,denominators)
+
+</script>
+</html>
