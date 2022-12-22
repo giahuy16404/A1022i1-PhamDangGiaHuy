@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Mời Bạn chọn món</h1>
+<button onclick="caPhe()">1.Cà Phê</button>
+<br>
+<button onclick="camVat()">2.Cam Vắt </button>
+<br>
+<button onclick="caRot()">3.Nước ép cà rốt</button>
+<br>
+
+<button onclick="nuocEpCaChua()">4.Nước ép cà chua</button>
+<br>
+
+<button onclick="nuocLoc()" >5.Nước Lọc</button>
+<br>
+
+<button onclick="nuocDua()" >6.Nước Lọc</button>
+<br>
+
+<button onclick="end()">7.Dừng gọi món</button>
+<br>
+
+</body>
+<script>
+        function caPhe() {
+            let soLuong = +prompt("Giá cà Phê là 12k , Mời bạn nhập vào số lương");
+            let sum = (soLuong  * 12)
+            alert("Giá ly cà phê là "+ sum + "k")
+        }
+        function camVat() {
+            let soLuong = +prompt("Giá cà cam vắt  là 25k , Mời bạn nhập vào số lương");
+            let sum = (soLuong  * 25)
+            alert("Giá cam vắt là "+ sum + "k")
+        }   function caRot() {
+            let soLuong = +prompt("Giá nước ép cà rốt là 25k , Mời bạn nhập vào số lương");
+            let sum = (soLuong  * 25)
+            alert("Giá nước ép cà rốt là "+ sum + "k")
+        }   function nuocEpCaChua() {
+            let soLuong = +prompt("Giá nước ép cà chua là là 25k , Mời bạn nhập vào số lương");
+            let sum = (soLuong  * 25)
+            alert("Giá nước ép cà chua là "+ sum + "k")
+        }   function nuocLoc() {
+            let soLuong = +prompt("Giá cà Phê là 5k , Mời bạn nhập vào số lương");
+            let sum = (soLuong  * 5)
+            alert("Giá nước lọc là "+ sum + "k")
+        }   function nuocDua() {
+            let soLuong = +prompt("Giá nước dừa là 20k , Mời bạn nhập vào số lương");
+            let sum = (soLuong  * 20)
+            alert("Giá nước dừa là "+ sum + "k")
+        }   function end() {
+            document.write()
+        }
+
+
+
+</script>
+</html>
