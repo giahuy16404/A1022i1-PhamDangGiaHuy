@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = [];
+    let aa = +prompt("Nhập vào số độ dài số nguyên a");
+    for (let i = 0; i <aa ; i++) {
+        a[i] = +prompt("Nhập vào số nguyên a")
+    }
+    let b = [];
+    let bb = +prompt("Nhập vào số độ dài số nguyên a");
+    for (let i = 0; i <bb; i++) {
+        b[i] = +prompt("Nhập vào số nguyên b")
+    }
+    function bai4 (a,b){
+
+    let c = [];
+    for (let i = 0; i <b.length ; i++) {
+        if (!a.includes(b[i])){
+            c.push(b[i]);
+        }
+    }return document.write(c)
+    }
+   bai4(a,b);
+
+
+
+
+</script>
+</html>
