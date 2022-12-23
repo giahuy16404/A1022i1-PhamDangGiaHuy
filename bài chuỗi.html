@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+     let arrayString = prompt("Nhập vào 1 chuỗi vào mãng");
+     let n = arrayString.length
+     function uplow(strs) {
+         for (let i = 0; i <n ; i++) {
+             if (i===0){
+                 document.write(arrayString[i].toUpperCase())
+             }else if (arrayString[i]===" ") {
+                 document.write(arrayString[i]);
+                 document.write(arrayString[i+1].toUpperCase())
+             }else {
+                 document.write(arrayString[i].toLowerCase())
+             }
+             // if (arrayString[i])
+             }
+    }uplow(arrayString)
+
+         // function longString(longstr) {
+         //     let max = [] ;
+         //     for (let i = 0; i <n ; i++) {
+         //       let a =  arrayString.split(" ")
+         //         if (a.length>max.length){
+         //             max = a[i]
+         //     }
+         //
+         //    }document.write( max+ " Đây là max")
+         //
+
+    // }longString(arrayString)
+
+</script>
+</html>
