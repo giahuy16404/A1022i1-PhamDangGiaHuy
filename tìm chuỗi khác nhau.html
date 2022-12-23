@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let s = prompt("Nhập vào 1 chuỗi ")
+    let a = s[0];
+    let coutn = 0;
+    function differentSymbolsNaive(ss) {
+        for (let i = 1; i <s.length ; i++) {
+            if (a!==s[i]&&a!==" "){
+                coutn++
+            }
+        }document.write(coutn)
+
+    }differentSymbolsNaive(s)
+
+</script>
+</html>
