@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+   <input type="text" id="inputTienLuong" placeholder="triệu">
+   <input type="button" onclick="Nhap()" value="Tinh lương">
+   <p id="result"></p>
+
+
+</body>
+<script>
+    function Nhap() {
+        let luong = +document.getElementById("inputTienLuong").value;
+        if (luong<7){
+            document.getElementById("result").innerText=(luong/100)*5+"triệu";
+        }else if (luong<15){
+            document.getElementById("result").innerText=(luong/100)*10+"triệu";
+        }if (luong===15){
+            document.getElementById("result").innerText=(luong/100)*20+"triệu";
+        }
+
+    }
+
+</script>
+</html>
