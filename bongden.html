@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Bật" onclick="a()">
+<input type="button" value="Tắt" onclick="b()">
+
+
+</body>
+<script>
+    class electriclamp{
+        constructor(status) {
+            this.status = status;
+        }
+        turnOff(){
+            this.status = false
+            alert("turn off")
+        }
+        turnOn(){
+            this.status = true
+            alert("turn on")
+        }
+    }
+    class SwitchButton{
+        constructor(status,lamp) {
+            this.status = status;
+            this.lamp = electriclamp;
+        }
+        connectTolamp(electricLamp){
+
+        }
+        switchOff(){
+            let electricLamp = new electriclamp();
+            electricLamp.turnOff();
+        }
+        switchOn(){
+            let electricLamp = new electriclamp();
+            electricLamp.turnOn();
+        }
+
+    }
+    let electric = new electriclamp();
+    let Switch = new SwitchButton();
+    function on() {
+        electric.turnOn();
+
+    }
+    function a() {
+       Switch.switchOn()
+
+    }
+    function b() {
+       Switch.switchOff()
+
+    }
+</script>
+</html>
