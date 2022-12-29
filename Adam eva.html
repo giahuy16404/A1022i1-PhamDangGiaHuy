@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" onclick="eatApple()" value="Ăn táo">
+</body>
+<script>
+    class Apple{
+        constructor(weight) {
+            this.weight = weight
+        }
+        setWeight (newWeight){
+            this.weight = newWeight;
+        }
+        decrease(){
+            return this.weight--
+        }
+        isEmpty()
+        {
+            if (this.weight === 0) return true;
+            else return false;
+        };
+    }
+    class Human{
+        constructor(name,gender,weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+        setName(newName){
+            this.name = newName
+        }
+        setGender(newGender){
+            this.gender = newGender;
+        }
+        setWeight(newWeight){
+            this.weight = newWeight;
+        }
+        checkApple(apple){
+            if (apple.isEmpty()) return true
+        }
+        eat(){
+            this.weight++
+        }
+        say(sayHM){
+            alert(sayHM)
+        }
+    }
+    function  eatApple() {
+        let adam = new Human();
+        adam.setName ("Adam");
+        adam.setGender (true);
+        adam.setWeight (25);
+
+        let eva = new Human();
+        eva.setName ("eva");
+        eva.setGender (false);
+        eva.setWeight (15);
+        let apple = new Apple;
+        apple.weight = +prompt("tao to bao nhieu");
+        while (true)
+        {
+            adam.say ("Anh ăn nhé!");
+            adam.eat();
+            apple.decrease();
+            if (!adam.checkApple(apple))
+            {
+                adam.say ("Eva! Em ăn đi!");
+                eva.say ("Vâng. Em ăn đây!");
+                eva.eat();
+                apple.decrease();
+            }
+            else
+            {
+                adam.say ("Eva! Hết mất rồi em!");
+                break;
+            }
+            if (!adam.checkApple (apple)) eva.say ("Adam! Anh ăn đi!");
+            else
+            {
+                eva.say ("Adam! Hết mất rồi anh!");
+                break;
+            }
+        }
+
+
+
+
+    }
+
+
+</script>
+</html>
